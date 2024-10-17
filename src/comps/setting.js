@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation"
 export default function Setting(){
 
     const router = useRouter()
-    const [showsetting,setShowsetting] = useState(false)
     return(
        <div className="setting">
         <i className="ri-home-5-line"></i>

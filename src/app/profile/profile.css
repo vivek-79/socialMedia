@@ -2,13 +2,164 @@
 
 .profile-page{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 45px);
     border: 1px solid;
 }
 
-
-.profile-basic-info{
+.basic-info{
+    min-height: 20vh;
     width: 100%;
-    height: 30vh;
+    position: relative;
+}
+
+.over-lay{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: self-end;
+    gap: 5px;
+}
+.pic-name{
+    height: 100%;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-end;
+}
+.profile-pic{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
     border: 1px solid;
+}
+
+.button{
+    font-size: 17px;
+    font-weight: 300;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(72, 68, 68, 0.738);
+    color: white;
+    display: flex;
+    flex-wrap: 0;
+    white-space: no-wrap;
+}
+.over-lay .f-btn{
+    position: relative;
+    margin-left: 5px;
+}
+.basic-info i{
+    font-size: 17px;
+    background-color: rgba(72, 68, 68, 0.738);
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+.basic-info p:nth-child(1){
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300px;
+}
+section{
+    width: (100% - 90px);
+    height: 70px;
+    position: absolute;
+    gap: 5px;
+    padding: 0 10px;
+    display: flex;
+    left: 28%;
+    right: 10px;
+    bottom: 50px;
+}
+.options{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.social-reach{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    gap: 5px;
+}
+.social-reach p:nth-child(1){
+    font-size: 15px;
+}
+.profile-nav{
+    width: 100%;
+    height: 20px;
+    background-color: rgba(72, 68, 68, 0.46); ;
+}
+
+main{
+    width: 100%;
+    height: 93.6vh;
+    padding: 15px 5px;
+    border: 1px solid;
+}
+
+main .profile-pic{
+    margin: auto;
+    position: relative;
+}
+main p:nth-child(1){
+    margin-left: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+main p:nth-child(3){
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    color: rgb(63, 63, 255);
+}
+main form {
+    width: min(400px,99%);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+}
+
+form input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    font-size: 19px;
+    color: white;
+    font-weight: 100;
+    border-bottom: 1px solid white;
+}
+
+form label{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.57);
+}
+
+form input:last-child{
+    margin-top: 30px;
+}
+
+form button{
+    margin-top: 30px;
+    padding: 5px 0;
+    font-size: 17px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(157, 157, 255, 0.418);
+    color: white;
 }

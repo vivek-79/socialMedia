@@ -7,10 +7,10 @@ import { dbConnect } from "@/lib/dbConnect";
 export async function GET(req) {
 
     await dbConnect();
-    const { cookies } = req
+    const { cookies } =  req 
     console.log(cookies)
-    const accessToken = cookies.get('accessToken')
-
+    const accessToken = cookies.get('accessToken') || cookies.value
+    console.log(accessToken)
     if (!accessToken) {
         return NextResponse.json({ success: false, message: "Unaouthorized request" }, { status: 400 })
     }

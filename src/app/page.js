@@ -1,5 +1,4 @@
 'use client'
-import Setting from "@/comps/setting";
 import styles from "./page.module.css";
 import Header from "@/comps/header";
 import Image from "next/image";
@@ -35,7 +34,6 @@ export default function Home() {
               <p>Vivek</p>
             </div>
           </div>
-            <Setting/>
         </div>
         <div className={styles.right}></div>
     </div>

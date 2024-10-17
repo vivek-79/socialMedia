@@ -1,5 +1,6 @@
 
 'use client'
+import Setting from "@/comps/setting";
 import localFont from "next/font/local";
 import store from "@/redux/store";
 import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       <body className='layout'>
         <Provider store={store}>
             {children}
+            <Setting/>
         </Provider>
       </body>
     </html>
