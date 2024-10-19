@@ -163,3 +163,13 @@ form button{
     background-color: rgba(157, 157, 255, 0.418);
     color: white;
 }
+
+main input[type='file']{
+    opacity: 0;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+
+main .change{
+    color: rgba(0, 0, 255, 0.663);
+}
